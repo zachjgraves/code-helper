@@ -19,7 +19,7 @@ language=st.selectbox("Pick a language", ["Python", "R", "JavaScript"])
 
 if st.button("Submit"):
     prompt="Fix this code or translate if the language chosen does not match the code provided. \
-        Follow any instructions listed under 'Intstruction:'. \
+        Follow any instructions listed under 'Instruction:'. \
              Code: {}, Language: {}, Instruction: {}".format(input_code, language, instructions)
     response=openai.Completion.create(
         model=MODEL,
