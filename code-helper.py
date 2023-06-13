@@ -12,7 +12,7 @@ st.subheader("Your friendly CODE helper")
 ### Code Input Section 
 input_code=st.text_area("Input Your Code")
 ### Instructions Section
-language=st.selectbox("Pick a language", ["Python", "R", "JavaScript", "Matlab"])
+language=st.selectbox("Pick a language", ["Python", "R", "JavaScript"])
 instructions=st.text_area("Add any additional instruction")
 
 if st.button("Submit"):
