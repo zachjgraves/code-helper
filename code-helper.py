@@ -27,5 +27,5 @@ if st.button("Submit"):
         max_tokens=1000,
         temperature=0.2
     )
-    st.caption(response.choices[0].text)
+    st.text(response.choices[0].text)
 
