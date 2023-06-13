@@ -16,7 +16,7 @@ language=st.selectbox("Pick a language", ["Python", "R", "JavaScript"])
 instructions=st.text_area("Add any additional instruction")
 
 if st.button("Submit"):
-    prompt="Fix this code or translate if the language chosen does not mactch the code provided. \
+    prompt="Fix this code or translate if the language chosen does not match the code provided. \
         Follow any instructions listed under 'Intstruction:'. \
              Code: {}, Language: {}, Instruction: {}".format(input_code, language, instructions)
     response=openai.Completion.create(
