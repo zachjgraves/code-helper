@@ -10,7 +10,7 @@ MODEL="text-davinci-003"
 st.title("GPT-3PO")
 st.subheader("Your friendly CODE helper")
 
-instructions=st.text_area("Add any additional instruction")
+instructions=st.text_area("Add instructions")
 ### Code Input Section 
 input_code=st.text_area("Input Your Code")
 ### Instructions Section
