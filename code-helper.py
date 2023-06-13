@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
-#import pandas as pd
-#import os
+import pandas as pd
+import os
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
