@@ -19,7 +19,6 @@ if st.button("Submit"):
     prompt="Fix this code or translate if the language chosen does not mactch the code provided. \
         Follow any instructions listed under 'Intstruction:'. \
              Code: {}, Language: {}, Instruction: {}".format(input_code, language, instructions)
-    st.caption(prompt)
     response=openai.Completion.create(
         model=MODEL,
         prompt=prompt,
