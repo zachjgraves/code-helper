@@ -27,5 +27,13 @@ if st.button("Submit"):
         max_tokens=1000,
         temperature=0.2
     )
-    st.text(response.choices[0].text)
+    
+    with st.empty():
+        collected_events = []
+        completion_text = ''
+        for event in response:
+            collected_events.append(event)
+            event_text = event['choices'][0]['text']
+            completion_text += event_text
+            st.write(completion_text)
 
