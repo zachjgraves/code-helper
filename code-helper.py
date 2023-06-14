@@ -14,8 +14,9 @@ instructions=st.text_area("Add instructions")
 ### Code Input Section 
 input_code=st.text_area("Input Your Code")
 ### Instructions Section
-language=st.selectbox("Pick a language", ["Python", "R", "JavaScript"])
-
+language=st.selectbox("Pick a language", ["Python", "R", "JavaScript", "Custom"])
+if language=="Custom":
+    language=st.text_input("Input Language")
 
 if st.button("Submit"):
     prompt="Fix this code or translate if the language chosen does not match the code provided. \
