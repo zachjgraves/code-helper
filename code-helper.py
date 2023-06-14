@@ -25,7 +25,8 @@ if st.button("Submit"):
         model=MODEL,
         prompt=prompt,
         max_tokens=1000,
-        temperature=0.2
+        temperature=0.2,
+        stream=True
     )
     
     with st.empty():
